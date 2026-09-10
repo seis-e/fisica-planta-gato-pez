@@ -3,168 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Blog | Portafolio</title>
-    
-    <!-- Importando la fuente Fira Sans desde Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    <style>
-        /* =========================================
-           CSS: Aquí definimos la estética (Blanco y Negro)
-           ========================================= */
-        
-        /* Estilos generales */
-        body {
-            font-family: 'Fira Sans', sans-serif;
-            background-color: #ffffff; /* Fondo blanco */
-            color: #000000; /* Texto negro */
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        /* Contenedor principal para centrar todo el contenido */
-        .container {
-            max-width: 900px;
-            margin: 0 auto; /* Esto centra el bloque en la pantalla */
-            padding: 20px;
-            text-align: center; /* Centra el texto de todos los elementos hijos */
-        }
-
-        /* Estilo de la imagen de encabezado */
-        .header-image {
-            width: 100%;
-            max-height: 300px;
-            object-fit: cover; /* Asegura que la imagen no se deforme */
-            filter: grayscale(100%); /* Fuerza la imagen a verse en blanco y negro */
-            margin-bottom: 20px;
-        }
-
-        /* Estilos del menú de navegación */
-        nav {
-            border-top: 2px solid #000;
-            border-bottom: 2px solid #000;
-            padding: 15px 0;
-            margin-bottom: 40px;
-        }
-
-        nav ul {
-            list-style-type: none; /* Quita los puntos de la lista */
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline; /* Coloca los elementos del menú en una línea horizontal */
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            text-decoration: none; /* Quita el subrayado de los enlaces */
-            color: #000000;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline; /* Subraya al pasar el mouse */
-        }
-
-        /* Estilos de las secciones */
-        section {
-            margin-bottom: 60px;
-            padding-bottom: 40px;
-            border-bottom: 1px dashed #cccccc; /* Línea separadora sutil */
-        }
-
-        /* Estilos para los títulos */
-        h1, h2, h3 {
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-
-        p {
-            font-weight: 300;
-            text-align: justify; /* Justifica el texto para que se vea más ordenado */
-            margin-bottom: 15px;
-        }
-        
-        /* Pie de página */
-        footer {
-            margin-top: 40px;
-            font-size: 0.8em;
-            color: #555;
-        }
-    </style>
+    <title>Home | Mi Blog</title>
+    <!-- Aquí le decimos al HTML que jale el diseño del archivo style.css -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- =========================================
-         HTML: Aquí construimos la estructura
-         ========================================= -->
-
-    <!-- Imagen de encabezado de marcador de posición (puedes cambiar la URL por tu propia imagen) -->
-    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2000&auto=format&fit=crop" alt="Imagen de encabezado del blog" class="header-image">
+    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2000&auto=format&fit=crop" alt="Encabezado" class="header-image">
 
     <div class="container">
         
         <!-- Menú de navegación -->
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#lecturas">Lecturas</a></li>
-                <li><a href="#investigacion">Investigación</a></li>
-                <li><a href="#publicaciones">Publicaciones</a></li>
+                <li><a href="index.html" class="activo">Home</a></li>
+                <li><a href="lecturas.html">Lecturas</a></li>
+                <li><a href="investigacion.html">Investigación</a></li>
+                <li><a href="publicaciones.html">Publicaciones</a></li>
             </ul>
         </nav>
 
-        <!-- Sección: Home -->
-        <section id="home">
+        <section>
             <h1>Bienvenido a mi Blog</h1>
             <p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
 
-        <!-- Sección: Lecturas -->
-        <section id="lecturas">
-            <h2>Lecturas</h2>
-            
-            <!-- Ejemplo de cómo estructurar una entrada o artículo dentro de una sección -->
-            <article>
-                <h3>Lecturas de física para tu planta, gato o pez</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Nulla ut posuere lectus, sit amet vehicula felis.</p>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum. Curabitur vel leo at nisi commodo venenatis eu a magna.</p>
-            </article>
-        </section>
-
-        <!-- Sección: Investigación -->
-        <section id="investigacion">
-            <h2>Investigación</h2>
-            
-            <article>
-                <h3>Cosmología y Teoría Cuántica de Campos en Espacio-Tiempo Curvo</h3>
-                <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida.</p>
-                <p><em>Alpha-attractors e inflación:</em> Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus.</p>
-            </article>
-        </section>
-
-        <!-- Sección: Publicaciones -->
-        <section id="publicaciones">
-            <h2>Publicaciones y Presentaciones</h2>
-            
-            <article>
-                <h3>Enfoque semiclásico del sistema E-KG-D en un recalentamiento 'Yukawa-coupled' post-Inflación</h3>
-                <p>Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis.</p>
-            </article>
-        </section>
-
-        <!-- Pie de página -->
         <footer>
             <p>&copy; 2026 Mi Blog. Creado con HTML y CSS.</p>
         </footer>
 
     </div>
-
 </body>
 </html>

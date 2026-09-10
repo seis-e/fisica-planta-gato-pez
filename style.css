@@ -81,6 +81,6 @@ footer {
     margin-top: 40px;
     font-size: 0.7em;
     color: #555;
-    border-top: none;
+    /* border-top: none; */
     padding-top: 20px;
 }
